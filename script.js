@@ -4,6 +4,13 @@ const introduction_text = document.querySelectorAll('.introduction-text');
 const single_profile_card = document.querySelectorAll('.single-profile-card');
 const testimonial_card = document.querySelectorAll('.testimonial-card');
 
+const menuToggle = document.querySelector('.menu-toggle');
+const navbarMenu = document.querySelector('.navbar-menu');
+
+menuToggle.addEventListener('click', () => {
+    navbarMenu.classList.toggle('active');
+});
+
 design_card_butttons.forEach((button, index) => {
     button.addEventListener('click', () => {
         introduction_text.forEach((introduction, introductionIndex) => {

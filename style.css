@@ -656,3 +656,50 @@ body::selection {
 .social-icons a:nth-child(6) i:hover {
   color: #3b5998;
 }
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+      display: block;
+  }
+
+  .navbar-menu {
+      display: none;
+      flex-direction: column;
+      gap: 0.5rem;
+  }
+
+  .navbar-menu.active {
+      display: flex;
+  }
+}
+
+
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.btn-secondary {
+  padding: 10px 15px;
+  background-color: #2575fc;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
